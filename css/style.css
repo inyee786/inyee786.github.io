@@ -439,12 +439,18 @@ section .cebenefits .product:hover .collapse{
  .details{
     margin-left: 20px;
 }
-.details .typeofsponser,.company-name{
+.details .typeofsponser{
+    font-size: 21px;
+ }
+ .details .company-name{
     font-size: 21px;
  }
 .details .position,.location{
         font-size: 18px;
  }
+ .details .location{
+    font-size: 18px;
+}
 .carousel{
     flex-direction: row;
  }
@@ -565,12 +571,18 @@ section .cebenefits .product:hover .collapse{
      .details{
         margin-left: 20px;
     }
-    .details .typeofsponser,.company-name{
+    .details .typeofsponser{
         font-size: 21px;
      }
-    .details .position,.location{
+     .details .company-name{
+        font-size: 21px;
+     }
+     .details .position{
             font-size: 18px;
      }
+     .details .location{
+        font-size: 18px;
+ }
     .carousel{
         flex-direction: row;
      }
@@ -713,12 +725,18 @@ section .cebenefits .product:hover .collapse{
      .details{
         margin-left: 20px;
     }
-    .details .typeofsponser,.company-name{
+    .details .typeofsponser{
+        font-size: 13px;
+     }
+     .details .company-name{
         font-size: 13px;
      }
     .details .position,.location{
             font-size: 12px;
      }
+     .details .location{
+        font-size: 12px;
+ }
     .carousel{
         flex-direction: column;
      }
