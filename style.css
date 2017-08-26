@@ -1,0 +1,594 @@
+body{
+    margin:0px;
+    border:0px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    background-color: greenyellow;
+    border-bottom: 5px red solid;
+}
+
+.logo{
+    flex: 20%;
+    block-size: 3em;
+}
+
+.logo img{
+    height: 8em;
+    width: 10em;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.icons img{
+    height: 6em;
+    width: 6em;
+}
+
+
+
+
+.dropbtn {
+    background-image:url(../assets/icons/menu.png);
+    background-size: 3em 3em;
+    background-repeat:no-repeat; 
+    height: 10px;
+    width: 10px;
+    padding: 16px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+
+}
+.dropbtn:hover{
+    margin-right: 10px;
+    display: block;
+    background-image:url(../assets/icons/cross.png);
+    /* display: none; */
+    background-repeat:no-repeat;
+    background-size: 2.5em 2.5em;
+    height: 10px;
+    width: 10px;
+    padding: 16px;
+  
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 0px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    border-top-left-radius:45%;
+    border-bottom-left-radius:45%; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ li{
+    list-style-type: none;
+    text-align: -webkit-right;
+ }
+/* .dropdown-content li:first-child{
+    border-top-left-radius: 20px;
+  }
+.dropdown-content li:last-child{
+    border-bottom-left-radius: 20px;
+  } */
+
+
+
+header .header-showcase{
+    background: url(../assets/images/image.JPG) no-repeat 0 -400px;
+    background-size:100% 800px; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: -webkit-center;
+    color: white;
+    margin-bottom: 10px;
+  
+}
+
+.header-showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  .header-showcase p{
+    font-size:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .products{
+    
+    display: flex;
+    /* flex-direction: row; */
+    text-align: center;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+section .products .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+}
+
+
+
+section .products .product img{
+    height: 150px;
+    width: 150px;
+    border-radius:50%; 
+}
+section .products .product p{
+    font-size: 1em;
+}
+section .products .product .collapse{
+    display: none;
+}
+section .products .product:hover img{
+    height: 180px;
+    width:  180px;
+    border-radius:50%;
+}
+section .products .product:hover .collapse{
+    display: block;
+    font-size:1em; 
+}
+
+
+
+
+/* Slideshow container */
+.Peoples-thought{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin: 20% 15% 7em 15%;
+  align-items: center;
+ 
+  
+}
+
+.carousel {
+    display:none
+    flex-direction-row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.carousel img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.details .person-name{
+font-size: 3em;
+font-weight:strong; 
+}
+.details .thought{
+    font-size: 2em;
+}
+.details .position{
+    font-size: 1em;
+    color: gainsboro;
+    font-weight: italic;
+}
+
+
+
+footer{
+  
+    height: 150px;
+    background: green; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, green , yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, green, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, green, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, green , yellow); /* Standard syntax (must be last) */
+    
+}
+
+footer .contact{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+footer .icons , .copy-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .icons img{
+    width: 3em;
+    height: 3em;
+    padding: 0 10px 0 10px;
+}
+
+
+
+@media only screen and  (max-device-width: 959px)
+{
+    
+    .logo img{
+        height: 95px;
+        width: 95px;
+    }
+  
+    .icons img{
+        height: 60px;
+        width: 60px;
+    }
+    .header-showcase h1{
+        margin:40px 0 20px 0;
+        font-size:30px;
+      }
+      
+      .header-showcase p{
+        font-size:20px;
+      }
+
+    section .products{
+         height: 380px;
+         margin-bottom: 50px;
+      }
+    
+    section .products .product{
+        width: 300px;
+        height: 300px;
+    }
+    section .products .product img{
+        height: 110px;
+        width: 110px;
+        border-radius:50%; 
+    }
+    section .products .product p{
+        font-size: 18px;
+    }
+ 
+    section .products .product:hover img{
+        height: 130px;
+        width:  130px;
+    }
+    section .products .product:hover .collapse{
+        font-size:18px; 
+    }
+
+    .Peoples-thought{
+        height:120px; 
+        margin: 200px 15% 30px 15%;
+      }
+      
+      .carousel img{
+        
+          height: 120px;
+          width: 120px;
+      }
+      .dot {
+        height: 10px;
+        width: 10px;
+      }
+      
+      
+    .details .person-name{
+      font-size: 28px;
+      
+      }
+      .details .thought{
+          font-size: 19px;
+      }
+      .details .position{
+          font-size: 13px;
+      }
+    
+    footer{
+            height: 145px;
+            }
+    footer .contact{
+            font-size: 30px;   
+          }
+    footer .icons img{
+            width: 40px;
+            height: 40px;
+        }
+    .contact .copy-right{
+            font-size: 10px;
+          }
+}
+
+
+
+@media screen and (min-device-width: 481px)and (max-device-width: 640px)
+{
+    .logo img{
+        height: 90px;
+        width: 90px;
+    }
+  
+    .icons img{
+        height: 55px;
+        width: 55px;
+    }
+    
+    .header-showcase h1{
+        margin:40px 0 20px 0;
+        font-size:25px;
+      }
+      
+      .header-showcase p{
+        font-size:15px;
+      }
+
+    section .products{
+            height: 340px;
+            margin-top: 20px;
+            margin-bottom: -20%;
+    }
+    section .products .product{
+            width: 180px;
+            height: 180px;
+        }
+    section .products .product img{
+        height: 90px;
+        width: 90px;
+    }
+    section .products .product p{
+        font-size: 15px;
+    }
+   
+    section .products .product:hover img{
+        height: 95px;
+        width:  95px;
+    }
+    section .products .product:hover .collapse{
+        font-size:15px; 
+    }
+    .Peoples-thought{
+        height:100px;
+        margin: 180px 15% 20px 15%;
+    }
+    .carousel img{
+        height: 85px;
+        width: 85px;
+    }
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+    }
+  
+    .details{
+      margin-left: 50px;
+    }
+  .details .person-name{
+  font-size: 24px;
+  
+    }
+  .details .thought{
+      font-size: 15px;
+    }
+  .details .position{
+      font-size: 10px;    
+    }
+    footer{
+        height: 134px;
+        margin-top: 10px;
+     }
+    footer .contact{
+        font-size: 27px;
+     }
+   
+      footer .icons img{
+          width: 35px;
+          height: 35px;
+          padding: 0 10px 0 10px;
+      }
+      
+      .contact .copy-right{
+          font-size: 10px;
+      }
+  
+
+}
+
+
+
+@media screen and (max-device-width: 480px) and (min-device-width:100px) {
+
+    .dropbtn {
+        background-size: 30px 30px;
+        align-items: center;
+        margin: 10px 5px 0 0; 
+        
+    }
+    .dropbtn:hover{
+        margin: 10px 5px 0 0; 
+       background-size: 30px 30px;
+       
+       }
+    .dropdown-content {
+        min-width: 110px;   
+    }
+
+
+    .logo img{
+        height: 70px;
+        width: 70px;
+    }
+  
+    .icons img{
+        height: 50px;
+        width: 50px;
+    }
+    
+    .header-showcase h1{
+        margin:40px 0 20px 0;
+        font-size:35px;
+      }
+      
+      .header-showcase p{
+        font-size:18px;
+      }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+      section .products{
+        height: 220px;
+        margin-top: 20px;
+        margin-bottom: 200px;
+    
+    }
+    section .products .product{
+       width: 200px;
+       height: 150px;
+    }
+    section .products .product img{
+        height: 80px;
+        width:  80px;
+    }
+    section .products .product p{
+        font-size: 12px;
+    }
+ 
+    section .products .product:hover img{
+        height: 85px;
+        width:  85px;
+    }
+    section .products .product:hover .collapse{
+        font-size:12px; 
+    }
+    
+
+    .Peoples-thought{
+        height: 190px;
+        margin : 1000px 15% 10px 15%
+    }
+    .carousel img{
+
+        height: 73px;
+        width: 73px;
+    }
+    .dot{
+        height: 7px;
+        width: 7px;
+    }
+    .details{
+        margin-left: 20px;
+    }
+    .details .person-name{
+        font-size: 15px;
+    }
+    .details .thought{
+        font-size: 10px;
+    }
+    .details .position{
+        font-size: 7px;
+     }
+
+    footer{    
+        height: 120px;
+    }
+    footer .contact{
+          font-size: 20px;
+     }
+    footer .icons img{
+         width: 35px;
+         height: 35px;
+    }
+    .contact .copy-right{
+        font-size: 10px;
+    }
+}
+
